@@ -1,0 +1,96 @@
+// header start
+nav a img {
+  height: 80px;
+  object-fit: cover;
+}
+
+nav .nav-item .nav-link:hover {
+  background-color: #dca73a !important;
+  color:#fff;
+  transition: 0.8s all ease-in-out;
+  border-radius: 25% 0% 25% 0% 25%;
+}
+// header end
+// footer start
+.foot {
+  width: 80%;
+}
+
+footer .foot-nav {
+  padding: 0px;
+}
+
+footer .foot-nav .foot-item {
+  list-style-type: none;
+}
+
+footer .foot-nav .foot-item .foot-link {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+footer .foot-nav .foot-item .foot-link:hover {
+  color: #dca73a !important;
+}
+
+footer .cont-info p i {
+  padding: 10px;
+  color: #dca73a !important;
+}
+// footer end
+
+.up {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  padding: 10px 15px;
+  background-color: #f1b233;
+  color: #fff;
+  border-radius: 50%;
+}
+
+.up:hover {
+  text-decoration: none;
+  color: #fff !important;
+}
+
+
+
+
+// @media screen and (min-width:767px) {
+//   .main-banner .banner-content-1 {
+//       position: absolute;
+//       transform: translate(-50%, -50%);
+//       top: 85%;
+//       left: 50%;
+//       width: 70%;
+//   }
+
+//   .main-banner .bookbtn {
+//       display: none;
+//   }
+//   .form-mob{
+//       display: none;
+//   }
+
+
+// }
+
+// @media screen and (max-width:767px) {
+//   .main-banner .banner-content-1 {
+//       display: none;
+//   }
+
+//   .main-banner .bookbtn {
+//       position: absolute;
+//       transform: translate(-50%, -50%);
+//       top: 80%;
+//       left: 50%;
+//   }
+//   .main-banner .bookbtn {
+//       transition: all 1s ease-in-out;
+//   }
+
+
+// }
+
