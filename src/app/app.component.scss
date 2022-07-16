@@ -7,7 +7,7 @@ nav a img {
 nav .nav-item .nav-link:hover {
   background-color: #dca73a !important;
   color:#fff;
-  transition: 0.8s all ease-in-out;
+  transition: 0.2s all ease-in-out;
   border-radius: 25% 0% 25% 0% 25%;
 }
 // header end
@@ -33,8 +33,8 @@ footer .foot-nav .foot-item .foot-link:hover {
   color: #dca73a !important;
 }
 
-footer .cont-info p i {
-  padding: 10px;
+footer .cont-info .fa-solid {
+  padding-right: 10px !important;
   color: #dca73a !important;
 }
 // footer end
@@ -56,22 +56,16 @@ footer .cont-info p i {
 
 
 
-
-// @media screen and (min-width:767px) {
-//   .main-banner .banner-content-1 {
-//       position: absolute;
-//       transform: translate(-50%, -50%);
-//       top: 85%;
-//       left: 50%;
-//       width: 70%;
-//   }
-
-//   .main-banner .bookbtn {
-//       display: none;
-//   }
-//   .form-mob{
-//       display: none;
-//   }
+@media screen and (min-width:767px) {
+  .nb1{
+    display: none;
+  }
+  }
+@media screen and (max-width:767px) {
+  .nb2{
+    display: none;
+  }
+  }
 
 
 // }
@@ -92,5 +86,4 @@ footer .cont-info p i {
 //   }
 
 
-// }
 

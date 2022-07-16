@@ -1,0 +1,50 @@
+<form action="mailto:support@vortexdigitalworld.com" (ngSubmit)="onSubmit(FormData.value)">
+  <div class="form-group">
+    <input class="form-control" type="text" name="FullName" placeholder="FullName" id="name"> <br>
+    <input class="form-control" type="email" name="Email"  placeholder="E-mail" id="email"> <br>
+    <input class="form-control" type="number" name="PhoneNumber" placeholder="Phone Number" id="phone"> <br>
+    <select multiple class="form-select" id="ss" name="Services" aria-label="Default select example">
+      <option selected disabled>select Service</option>
+      <option value="1">Complete Digital Marketing Solutions</option>
+      <option value="2">Website Development</option>
+      <option value="3">Social Media Marketing</option>
+      <option value="3">Content Marketing</option>
+      <option value="3">Search Engine Optimization</option>
+      <option value="3">Blogging</option>
+      <option value="3">Paid Advertising</option>
+      <option value="3">Email Marketing</option>
+    </select> <br>
+    <textarea class="form-control" name="Msg" id="msg" rows="4" placeholder="Enter Message Here..."></textarea>
+    <button class="bttn btn btn-lg m-2 d-flex mx-auto" type="submit" [disabled]="!FormData.valid"
+      mailto="support@vortexdigitalworld.com">Submit</button>
+  </div>
+</form>
+
+
+
+
+<!-- <div class="container">
+  <h2 class="text-center mb-5">Angular Contact Form Hosted On FireBase</h2>
+  <div class="row">
+    <div class="col-md-6 offset-md-3">
+      <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Enter email"
+            formControlName="Email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" class="form-control" name="Fullname" placeholder="Full Name" formControlName="Fullname">
+        </div>
+        <div class="form-group">
+          <label for="comment">Comment</label>
+          <textarea class="form-control" formControlName="Comment" name="Comment">
+  </textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" [disabled]="!FormData.valid">Submit</button>
+      </form>
+    </div>
+  </div>
+</div> -->

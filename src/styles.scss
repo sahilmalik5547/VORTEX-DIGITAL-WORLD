@@ -3,8 +3,6 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 @import "~bootstrap/dist/css/bootstrap.css";
- //@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
-// @import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
 * {
   font-family: 'Noto Sans', sans-serif;
@@ -25,7 +23,14 @@ html{
 :hover {
   background-color: #f1b233;
   color: #fff !important;
-}}
+}
+a{
+  color: #fff;
+  :hover{
+    color:#fff
+  }
+}
+}
 
 .c1{
   color: #dca73a;
@@ -34,4 +39,23 @@ html{
   font-size: 7vh;
   color: #dca73a;
 
+}
+
+// scroll bar
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #dca73a;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #dca73a;
+  width: 15px;
 }

@@ -1,3 +1,4 @@
+import { ContactService } from './service/contact.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
@@ -8,6 +9,10 @@ import { OurservicesComponent } from './components/ourservices/ourservices.compo
 import { ReviewsComponent } from './components/reviews/reviews.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { RouterModule } from '@angular/router';
+import { ChooseusComponent } from './components/chooseus/chooseus.component';
+import { ContactusformComponent } from './components/contactusform/contactusform.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,15 +20,21 @@ import { RouterModule } from '@angular/router';
     HomeComponent,
     OurservicesComponent,
     ReviewsComponent,
-    ContactusComponent
+    ContactusComponent,
+    ChooseusComponent,
+    ContactusformComponent
   ],
   imports: [
+    ReactiveFormsModule,
     BrowserModule,
     BrowserAnimationsModule,
     CarouselModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ContactService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
