@@ -39,19 +39,25 @@ footer .cont-info .fa-solid {
 }
 // footer end
 
-.up {
+.phone {
   position: fixed;
-  bottom: 20px;
-  right: 25px;
-  padding: 10px 15px;
+  bottom: 25px;
+  right: 35px;
+  padding: 15px 20px;
   background-color: #f1b233;
   color: #fff;
   border-radius: 50%;
 }
 
-.up:hover {
+.phone:hover {
   text-decoration: none;
   color: #fff !important;
+}
+.cont-info{
+  a{
+    text-decoration: none;
+    color: unset;
+  }
 }
 
 

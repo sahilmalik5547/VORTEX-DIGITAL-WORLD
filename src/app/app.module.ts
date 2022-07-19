@@ -1,4 +1,3 @@
-import { ContactService } from './service/contact.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
@@ -10,9 +9,10 @@ import { ReviewsComponent } from './components/reviews/reviews.component';
 import { ContactusComponent } from './components/contactus/contactus.component';
 import { RouterModule } from '@angular/router';
 import { ChooseusComponent } from './components/chooseus/chooseus.component';
-import { ContactusformComponent } from './components/contactusform/contactusform.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MatIconModule } from '@angular/material/icon'
+
 
 @NgModule({
   declarations: [
@@ -21,8 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
     OurservicesComponent,
     ReviewsComponent,
     ContactusComponent,
-    ChooseusComponent,
-    ContactusformComponent
+    ChooseusComponent
   ],
   imports: [
     ReactiveFormsModule,
@@ -30,11 +29,10 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     CarouselModule,
     RouterModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule
   ],
-  providers: [
-    ContactService
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
